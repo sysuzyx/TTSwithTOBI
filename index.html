@@ -1,0 +1,51 @@
+
+<html>	
+    <head>	
+      <meta charset="UTF-8">	
+      <title>Audio samples from "Fine-grained Prosody Modeling in Neural Speech Synthesis using ToBI Representation"</title>
+    </head>	
+    <body>	
+      <div>	
+        <article>	
+          <header>	
+            <h1>Audio samples from "Fine-grained Prosody Modeling in Neural Speech Synthesis using ToBI Representation"</h1>	
+          </header>	
+        </article>	
+  
+        <!-- <p><b>Paper: </b><a href="https://arxiv.org/abs/2010.11439">arXiv</a></p>	 -->
+        <p><b>Authors: </b>Yuxiang Zou, Shichao Liu, Xiang Yin, Haopeng Lin, Chunfeng Wang, Haoyu Zhang, Zejun Ma.</p>	
+  
+        <p><b>Abstract:</b>	
+            Benefiting from the great development of deep learning, modern neural text-to-speech (TTS) models can generate speech indistinguishable from natural speech. However, The generated utterances often keep an average prosodic style of the database instead of having rich prosodic variation. For pitch-stressed languages, such as English, accurate intonation and stress is important for conveying the semantic information. In this work, we propose a fine-grained prosody modeling method in neural speech synthesis with ToBI (Tones and Break Indices) representation. The proposed system consists of a text frontend for ToBI prediction and a Tacotron-based TTS module for prosody modeling. By introducing the ToBI representation, we can control the system to synthesize speech with finer and accurate intonation and stress at syllable level. Compared with two baselines (Tacotron and unsupervised method), experiments show that our model can generate more natural speech with more accurate prosodic variation, as well as effectively control the stress, intonation and pause of the speech.	
+   </p>	
+  
+  
+        <h2>Comparison among systems</h2>	
+        <!-- <p><i>Random sample from Evaluation set 1 in the paper.</i></p>	 -->
+        <table>	
+          <thead>	
+            <tr>	
+              <th>TACO</th><th>TP-DPE</th><th>TP-ToBI</th><th>GT-ToBI</th>
+            </tr>	
+          </thead>	
+          <tbody>	
+            <tr><td colspan="6"><span>1: How careful she is!</span></td></tr>	
+            <tr>	
+              <td><audio controls=""><source src="TACO/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+              <td><audio controls=""><source src="TP-DPE/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+              <td><audio controls=""><source src="TP-ToBI/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+              <td><audio controls=""><source src="GT-ToBI/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+            </tr>	
+            <tr><td colspan="6"><span>2: How careful she is!</span></td></tr>	
+            <tr>	
+              <td><audio controls=""><source src="TACO/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+              <td><audio controls=""><source src="TP-DPE/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+              <td><audio controls=""><source src="TP-ToBI/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+              <td><audio controls=""><source src="GT-ToBI/EN_testset_000322.npy.wav" type="audio/wav"></audio></td>	
+            </tr>	
+          </tbody>	
+  
+      </div>	
+    </body>	
+  </html>	
+  
