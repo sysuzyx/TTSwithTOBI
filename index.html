@@ -19,6 +19,42 @@
           Benefiting from the great development of deep learning, modern neural text-to-speech (TTS) models can generate speech indistinguishable from natural speech. However, The generated utterances often keep an average prosodic style of the database instead of having rich prosodic variation. For pitchstressed languages, such as English, accurate intonation and stress are important for conveying semantic information. In this work, we propose a fine-grained prosody modeling method in neural speech synthesis with ToBI (Tones and Break Indices) representation. The proposed system consists of a text frontend for ToBI prediction and a Tacotron-based TTS module for prosody modeling. By introducing the ToBI representation, we can control the system to synthesize speech with accurate intonation and stress at syllable level. Compared with the two baselines (Tacotron and unsupervised method), experiments show that our model can generate more natural speech with more accurate prosody, as well as effectively control the stress, intonation, and pause of the speech.	
    </p>	
   
+
+   <h2>Controllability evaluation of speech synthesis backend</h2>	
+   <p><i>Sample from Table 2 in the paper.</i></p>
+   <p>Under the given ground truth ToBI labels, test whether each ToBI feature is effectively reflected in generated speech.</p>
+   <table>	
+     <thead>	
+       <tr>	
+         <th>GT-ToBI</th>
+       </tr>	
+     </thead>	
+     <tbody>	
+       <tr><td colspan="6"><span>1: "Hi(H*) there(H-), can I help you find(H*) anything(H-L%)?</span></td></tr>	
+       <tr>	
+         <td><audio controls=""><source src="GT-ToBI/badcase_0001_1.wav" type="audio/wav"></audio></td>		
+       </tr>	
+       <tr><td colspan="6"><span>2: Sorry(H* L-), we(H*) don't have yellow jeans(!H*) here(L-L%). Let me give you a recommendation(H* L-L%).</span></td></tr>	
+       <tr>	
+         <td><audio controls=""><source src="GT-ToBI/badcase_0021_1.wav" type="audio/wav"></audio></td>	
+       </tr>	
+       <tr><td colspan="6"><span>3: Is there anything(H*) here(L+H* H-) we didn't(H*) already know(L* H-H%)?</span></td></tr>	
+       <tr>	
+         <td><audio controls=""><source src="GT-ToBI/EN_corpus_114836_1.wav" type="audio/wav"></audio></td>	
+       </tr>		
+       <tr><td colspan="6"><span>4: Pay in cash(L+H* H-) , by credit card(L+H* H-) or scan(H*) to pay(L-L%), you can choose(H*) one(L-L%).</span></td></tr>	
+       <tr>	
+         <td><audio controls=""><source src="GT-ToBI/badcase_0054_1.wav" type="audio/wav"></audio></td>		
+       </tr>
+       <tr><td colspan="6"><span>5: Does Bob play basketball(H*) every(L*) day(L-H%)?</span></td></tr>	
+       <tr>	
+         <td><audio controls=""><source src="GT-ToBI/badcase_0087_1.wav" type="audio/wav"></audio></td>		
+       </tr>	
+       <tr><td colspan="6"><span>6: A quiet day's fishing(H* L-), or eight(H*) hours in a cinema(L-) seeing the same(H*) film over(!H*) and over(!H*) again(L-L%), is usually as far(H*) as they get(L-L%).</span></td></tr>	
+       <tr>	
+         <td><audio controls=""><source src="GT-ToBI/badcase_0075_1.wav" type="audio/wav"></audio></td>		
+       </tr>		
+     </tbody>	
   
         <h2>Comparison among systems</h2>	
         <p><i>Sample from Table 4 in the paper.</i></p>
