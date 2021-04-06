@@ -21,7 +21,11 @@
   
   
         <h2>Comparison among systems</h2>	
-        <p><i>Sample from Table 4 in the paper.</i></p>	
+        <p><i>Sample from Table 4 in the paper.</i></p>
+        <p><i>TACO: the model architecture is the same with the Tacotron and the input features are simply composed of the labels of phoneme, lexical stress, and word boundary.</i></p>
+        <p><i>TP-DPE: the unsupervised method. Phone-level prosodic features predicted from text, including phone duration, pitch and energy (DPE features), are used to realize prosody modeling.</i></p>
+        <p><i>TP-ToBI: the proposed method. The ToBI labels are predicted from text using the proposed ToBI prediction frontend.</i></p>
+        <p><i>GT-ToBI: the acoustic model is the same as TP-ToBI, but the ToBI-related labels are manually annotated from text alone.</i></p>
         <table>	
           <thead>	
             <tr>	
